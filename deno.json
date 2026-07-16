@@ -1,0 +1,38 @@
+{
+  "name": "nestjs-deno-template",
+  "exports": "./src/main.ts",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "tasks": {
+    "dev": "deno run --watch --allow-net --allow-env src/main.ts",
+    "build": "nest build",
+    "start:prod": "deno -A dist/main.js",
+    "generate": "nest generate"
+  },
+  "imports": {
+    "@/": "./src/",
+    "@nestjs/common": "npm:@nestjs/common@^11.0.1",
+    "@nestjs/core": "npm:@nestjs/core@^11.0.1",
+    "@nestjs/platform-express": "npm:@nestjs/platform-express@^11.0.1",
+    "reflect-metadata": "npm:reflect-metadata@^0.2.2",
+    "rxjs": "npm:rxjs@^7.8.1",
+
+    "@std/expect": "jsr:@std/expect@^1.0.20",
+    "@std/testing": "jsr:@std/testing@^1.0.19",
+    "@nestjs/cli": "npm:@nestjs/cli@^11.0.0",
+    "@nestjs/schematics": "npm:@nestjs/schematics@^11.0.0",
+    "@nestjs/testing": "npm:@nestjs/testing@^11.0.1",
+    "@types/supertest": "npm:@types/supertest@^7.0.0",
+    "supertest": "npm:supertest@^7.0.0"
+  },
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "outDir": "./dist"
+  }
+}
