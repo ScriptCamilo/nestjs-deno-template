@@ -2,8 +2,8 @@ import { Test, type TestingModule } from "@nestjs/testing";
 import { beforeEach, describe, it } from "@std/testing/bdd";
 import { expect } from "@std/expect";
 
-import { AppController } from "@/app.controller.ts";
-import { AppService } from "@/app.service.ts";
+import { AppController } from "@/app.controller";
+import { AppService } from "@/app.service";
 
 describe("AppController", () => {
   let appController: AppController;
