@@ -22,7 +22,7 @@ describe("AppController (e2e)", () => {
     await request(app.getHttpServer())
       .get("/")
       .expect(200)
-      .expect("Hello World!");
+      .expect("Hello World, from Deno Deploy with NestJS!");
   });
 
   afterEach(async () => {
